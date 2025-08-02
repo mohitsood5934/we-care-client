@@ -1,0 +1,35 @@
+.footer_wrpr {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.dashboard-footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.footer-link {
+  text-align: center;
+  text-decoration: none;
+  color: #6b7280;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-link.active {
+  color: #2563eb;
+}
+
+.footer-link svg {
+  margin-bottom: 0.25rem;
+}
+
+.footer-spacer {
+  height: 1rem;
+}
