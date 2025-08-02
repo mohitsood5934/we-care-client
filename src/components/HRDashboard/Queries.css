@@ -1,0 +1,105 @@
+.design-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ffffff;
+  justify-content: space-between;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Header */
+.design-root .design-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem 1rem 0.5rem;
+}
+
+.design-root .design-title {
+  color: #111518;
+  font-size: 1.125rem;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  flex: 1;
+  text-align: center;
+  padding-left: 3rem;
+}
+
+
+/* Tabs */
+.design-root .design-tabs {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid #dbe1e6;
+  padding-bottom: 0.75rem;
+}
+
+.design-root .design-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 0.8125rem;
+  border-bottom: 3px solid transparent;
+  color: #60768a;
+  text-decoration: none;
+}
+
+.design-root .design-tab.active {
+  border-color: #111518;
+  color: #111518;
+}
+
+.design-root .design-tab p {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+}
+
+/* Query items */
+.design-root .design-query {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  min-height: 72px;
+}
+
+.design-root .design-icon {
+  background-color: #f0f2f5;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111518;
+  flex-shrink: 0;
+}
+
+.design-root .design-query-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.design-root .design-query-content .title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111518;
+  line-height: 1.5;
+}
+
+.design-root .design-query-content .assigned {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #60768a;
+  line-height: 1.5;
+}

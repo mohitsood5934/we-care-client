@@ -1,8 +1,20 @@
 import React from "react";
-import KeyMetrics from "../components/KeyMetrics";
+import PropTypes from "prop-types";
+import EmpDashBoard from "../components/EmployeeDashBoard/EmpDashBoard";
+import HrDashboard from "../components/HRDashboard/HrDashboard";
 
-const Dashboard = () => {
-  return <KeyMetrics />;
+const Dashboard = (props) => {
+  const { isAdminUser = false } = props;
+
+  return (
+    <div>
+      {isAdminUser ? <HrDashboard /> : <EmpDashBoard />}
+    </div>
+  );
+};
+
+Dashboard.propTypes = {
+  isAdminUser: PropTypes.bool,
 };
 
 export default Dashboard;

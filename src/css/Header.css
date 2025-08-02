@@ -1,29 +1,19 @@
-/* .dashboard-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dashboard-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #111827;
-}
-
-.dashboard-settings .settings-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #6b7280;
-} */
-
 .dashboard-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1rem;
+  height: 20px;
+  border-bottom: 1px solid #eee;
 }
-
+.dashboard-header .dashboard-logo .jd-logo{
+    width: 84px;
+    height: 21px;
+    display: inline-block;
+    background: url(//akam.cdn.jdmagicbox.com/images/icontent/newwap/prot_072018/hpnwhdrlogoicn.svg) no-repeat;
+    vertical-align: middle;
+    background-size: 100%;
+}
 .dashboard-back {
   flex-shrink: 0;
 }
@@ -39,7 +29,7 @@
 }
 
 .dashboard-title {
-  font-size: 1.5rem;
+  font-size: 20px;
   font-weight: bold;
   color: #111827;
   text-align: center;

@@ -3,7 +3,7 @@ import '../css/KeyMetrics.css';
 
 const KeyMetrics = () => {
   return (
-    <div className="dashboard-keymetric-root">
+    <div className="dashboard-keymetric-root pb-80">
       <div>
         <h2 className="section-title">Key Metrics</h2>
         <div className="metrics-container">

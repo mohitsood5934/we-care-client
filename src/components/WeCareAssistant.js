@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { Typewriter } from "react-simple-typewriter";
 import "../css/WeCareAssistant.css";
 
 const WeCareAssistant = (props) => {
@@ -34,9 +35,17 @@ const WeCareAssistant = (props) => {
           <div className="message-content">
             <p className="assistant-name">WeCare Assistant</p>
             <p className="assistant-text">
-              I can help you with a variety of HR-related questions, such as
-              benefits, payroll, time off, and more. Just type your question
-              below, and I'll do my best to assist you.
+              <Typewriter
+                words={[
+                  "I can help you with a variety of HR-related questions, such as benefits, payroll, time off, and more. Just type your question below, and I'll do my best to assist you.",
+                ]}
+                loop={1}
+                cursor
+                cursorStyle="|"
+                typeSpeed={50}
+                deleteSpeed={0}
+                delaySpeed={1000}
+              />
             </p>
           </div>
         </div>

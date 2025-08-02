@@ -1,5 +1,5 @@
+
 .dashboard-root {
-  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,24 +98,6 @@
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.footer-link {
-  text-align: center;
-  text-decoration: none;
-  color: #6b7280;
-  font-size: 0.875rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer-link.active {
-  color: #2563eb;
-}
-
-.footer-link svg {
-  margin-bottom: 0.25rem;
-}
-
-.footer-spacer {
-  height: 1rem;
+.pb-80 {
+  padding-bottom: 80px;
 }

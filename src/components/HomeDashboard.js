@@ -1,16 +1,29 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../css/HomeDashboard.css";
 
 const HomeDashboard = (props) => {
   const { userProfile } = props;
+  const { channelId } = useParams();
   const { name = "" } = userProfile;
   const navigate = useNavigate();
 
+  const createChannel = () => {
+    console.log(channelId, "channelId");
+  };
+
   const onChatButtonClickHandler = () => {
-    navigate("/chat");
+    const channelId = 10099647;
+    // createChannel()
+    //   .then(() => {
+        navigate(`/chat/${channelId}`);
+      // })
+      // .catch((err) => {
+      //   console.log(`Error occurred while creating channel - ${channelId}`);
+      // });
   };
 
   return (
@@ -39,7 +52,8 @@ const HomeDashboard = (props) => {
                 backgroundImage:
                   "url('https://lh3.googleusercontent.com/aida-public/AB6AXuAt0wzRMq-9FyZFB0lsHxc_2X7WJhihEf92vSqWP7msfYDtKRMr6nn92v-kRihuI_UEwX-3BywnvJHyi6xwoiJc-jzQCXW-mPka87ynxNhFND6jKW8Ou9eLxTqg4FR5SFlhjDnD8sat0CMPyWjao_8BkAxZW-ChjV7HuH2PJLL6xCmdm2sGk2kEgCmey7wnAmKeH-Cmcw0q7n_nTG3oMXcnqu8moWBJco9lIFEkDa08I_jtzZQrhgsIU9S0fTF30RvzipHntee84XZh')",
               }}
-            ></div>
+            >
+            </div>
           </div>
         </div>
       </div>

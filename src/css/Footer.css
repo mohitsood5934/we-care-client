@@ -3,13 +3,15 @@
   bottom: 0;
   width: 100%;
 }
-.dashboard-footer {
+.footer{
   display: flex;
   justify-content: space-around;
   background-color: #ffffff;
   padding: 0.75rem;
   border-radius: 0.75rem;
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .footer-link {
@@ -27,9 +29,6 @@
 }
 
 .footer-link svg {
-  margin-bottom: 0.25rem;
-}
-
-.footer-spacer {
-  height: 1rem;
+  width: 20px;
+  height: 20px;
 }

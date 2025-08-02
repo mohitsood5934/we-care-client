@@ -4,14 +4,19 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Home from "./pages/Home";
 import WeCareAssistant from "./components/WeCareAssistant";
+import KeyMetricsPage from "./pages/KeyMetricsPage";
 import Dashboard from "./pages/Dashboard";
+import "./App.css";
 
 const App = () => {
   const userProfile = {
     name: "Mohit",
+    role: "admin",
   };
 
-  const { name } = userProfile;
+  const { name = "", role = "" } = userProfile;
+  // const IS_ADMIN_USER = role === "admin";
+    const IS_ADMIN_USER = false;
 
   return (
     <Router>
@@ -20,10 +25,29 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home userProfile={userProfile} />} />
-            <Route path="/chat" element={<WeCareAssistant name={name} />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route
+              path="/chat/:channelId"
+              element={<WeCareAssistant name={name} />}
+            />
+            <Route path="/key-metrics" element={<KeyMetricsPage />} />
+            <Route
+              path="/admin-dashboard"
+              element={<Dashboard isAdminUser={IS_ADMIN_USER} />}
+            />
+            <Route
+              path="/user-dashboard"
+              element={<Dashboard isAdminUser={IS_ADMIN_USER} />}
+            />
+              <Route
+              path="/admin-dashboard"
+              element={<Dashboard isAdminUser={IS_ADMIN_USER} />}
+            />
+            <Route
+              path="/user-dashboard"
+              element={<Dashboard isAdminUser={IS_ADMIN_USER} />}
+            />
           </Routes>
-          <Footer />
+          <Footer isAdminUser={IS_ADMIN_USER} />
         </main>
       </div>
     </Router>
